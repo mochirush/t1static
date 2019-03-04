@@ -1,7 +1,7 @@
 $(function(){    
 t1 = {
     loadScripts: () => {
-
+        // test
         // Load editor object/plugins
 
         const urls = [
