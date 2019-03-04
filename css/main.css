@@ -133,7 +133,15 @@ body, html {
   .max-width-tab-470 {
     max-width: 470px; }
   .min-h-900-tab {
-    min-height: 900px; } }
+    min-height: 900px; }
+  .paddingl-tab-4 {
+    padding-left: 4rem; }
+  .paddingl-tab-2 {
+    padding-left: 2rem; }
+  .paddingt-tab-4 {
+    padding-top: 4rem; }
+  .paddingb-tab-4 {
+    padding-bottom: 4rem; } }
 
 @media (min-width: 992px) {
   .col-d-3 {
@@ -353,7 +361,9 @@ body, html {
   .max-width-900-lg {
     max-width: 900px; }
   .max-height-900-lg {
-    max-height: 900px; } }
+    max-height: 900px; }
+  .max-w-900-lg {
+    max-width: 900px; } }
 
 @media (min-width: 1440px) {
   .col-xld-3 {
@@ -1185,7 +1195,9 @@ a {
     font-weight: 900;
     display: block; }
   body, p, a, .btn, .custom-select, input.form-control {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .font-09- {
+    font-size: 0.9rem; } }
 
 @media (min-width: 1200px) {
   h1, h1, h1 a {
@@ -2245,7 +2257,7 @@ header {
       height: calc(100% - 30%);
       justify-content: flex-end;
       align-items: flex-end; }
-    @media screen and (min-width: 767.8px) and (max-width: 992px) {
+    @media screen and (min-width: 768px) and (max-width: 991.8px) {
       header .banner-content img.showcase {
         transform: scale(0.6); } }
     header .banner-content .slogan {
@@ -9551,11 +9563,11 @@ input.form-control {
   .why-attend[data-background="dark-navy"] > div {
     justify-content: center; } }
 
-@media screen and (min-width: 0px) and (max-width: 992px) {
+@media screen and (min-width: 0px) and (max-width: 991.8px) {
   .columns.column-b {
     background-image: url("https://www.technologyonecorp.com/tools/home/why-showcase.jpg");
     background-repeat: no-repeat; }
-  .columns.column-a img {
+  .columns.column-a {
     display: none; } }
 
 @media screen and (min-width: 1440px) {

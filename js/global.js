@@ -5,8 +5,8 @@ t1 = {
         // Load editor object/plugins
 
         const urls = [
-            'https://cdn.jsdelivr.net/gh/mochirush/t1static@dfb4d4e353834007e444e408e421b807dd05ef35/js/t1-utilities.js' // utils
-            //'./?a=100832:js/t1-utilities.js'
+            //'https://cdn.jsdelivr.net/gh/mochirush/t1static@dfb4d4e353834007e444e408e421b807dd05ef35/js/t1-utilities.js' // utils
+            'js/t1-utilities.js'
         ];
 
         let scriptPartials = Promise.all(urls.map(url =>
@@ -20,7 +20,10 @@ t1 = {
             t1.equalHeightList();
             t1.loads();
             t1.banner();
-            t1.heroOverLayList();
+            // t1.heroOverLayList();
+            t1.equalWidthList();
+            var nodes = $('.showcase-locations').find('.btn');
+            console.log(nodes);
         }); 
 
     },
@@ -47,6 +50,9 @@ t1 = {
     heroOverLayList: () => {
         t1.utilities.heroOverLay('#why-attend');
     },
+    equalWidthList: () => {
+        t1.utilities.equalWidth('.showcase-locations', '.btn');
+    },
     loads: () => {
         setTimeout(() => {
             if ( matchMedia('screen and (min-width: 768px) and (max-width: 1440px').matches ) {
@@ -63,12 +69,13 @@ t1 = {
     resize: () => {
         t1.equalHeightList(); 
         t1.locationsMobile();
-        
+        console.log('resized')
     },
     equalHeightList: () => {
         t1.utilities.equalHeights('.speakers-secondary', 'span.h3');
         t1.utilities.equalHeights('.speakers-secondary', 'p.card-text');
-
+        t1.utilities.equalHeights('#why-attend', '.columns');
+        t1.utilities.heroOverLay('#why-attend');
         // t1.utilities.ratioBkgImage($('.speakers .card-header'));
         // t1.utilities.ratioBkgImage($('.speakers-secondary .card-header'));
         // t1.utilities.ratioBkgImage($('.showcase-locations .slide-content .card-header'));

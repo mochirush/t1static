@@ -28,6 +28,19 @@ t1.utilities = {
 			});
 		});
 	},
+	equalWidth: (parent, child) => {
+		let nodes = $(parent).find(child);
+		let widestWidth = [];
+		nodes.each(function(){
+	        let currentWidth = $(this).outerWidth();
+	        widestWidth.push(currentWidth);
+	    });
+
+	    let width = Math.max.apply(Math, widestWidth);
+		nodes.each(function(){
+			$(this).outerWidth(width);
+		});
+	},
 	equalHeightsSelect: (parent, selector, child) => {
 		let nodes = $(parent).find(child);
 		let tallestHeight = $(selector).outerHeight();
