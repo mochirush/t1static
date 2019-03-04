@@ -5,7 +5,7 @@ t1 = {
         // Load editor object/plugins
 
         const urls = [
-            'js/t1-utilities.js' // utils
+            'https://cdn.jsdelivr.net/gh/mochirush/t1static@dfb4d4e353834007e444e408e421b807dd05ef35/js/t1-utilities.js' // utils
             //'./?a=100832:js/t1-utilities.js'
         ];
 
