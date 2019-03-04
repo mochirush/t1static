@@ -62,7 +62,7 @@ t1.utilities = {
         let topNavBottomCoord = parseFloat($('.top-nav').position().top + $('.top-nav').outerHeight());
         let bannerContentHeight = parseFloat(headerHeight - topNavBottomCoord);
         $('.banner-content').height(bannerContentHeight);
-        console.log('here')
+       
 	 }
 };
 
